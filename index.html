@@ -383,11 +383,21 @@
             </div>
             <div class="follow">
                 <h2 class="bsmt-soc-title">Підпишіться на розсилку</h2>
-                <form name="follow-us">
-                    <label for="user_email">
-                        <input class="user-email" type="email" name="email" placeholder="E-mail"/>
-                    </label>
-                    <button class="hero-btn" type="submit">Submit</button>
+                <form name="follow-us" class="follow-us">
+                    <label for="user-email"></label>
+                    <input 
+                        class="user-email"
+                        type="email"
+                        name="user-email"
+                        id="user-email"
+                        placeholder="E-mail"
+                    />
+                    <button class="bsmt-btn" type="submit">
+                        Підписатися
+                        <svg class="bsmt-send-icon" width="24" height="24">
+                            <use href="./images/Icon/icons.svg#icon-bsmt-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -402,6 +412,56 @@
                     <use href="./images/Icon/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form name="modal-form" class="callback">
+                <label for="user-name" class="label-name">Ім'я</label>
+                <div class="modal-name">
+                    <input
+                        class="input-text"
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder=""
+                    />
+                    <label for="user-name" class="label-icon">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/Icon/icons.svg#icon-modal-person"></use>
+                        </svg>
+                    </label>
+                </div>
+                <label for="user-phone" class="label-name">Телефон</label>
+                <div class="modal-name">
+                    <input class="input-text" type="text" name="user-name" id="user-phone" placeholder="" />
+                    <label for="user-phone" class="label-icon">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/Icon/icons.svg#icon-modal-phone"></use>
+                        </svg>
+                    </label>
+                </div>
+                <label for="user-mail" class="label-name">Пошта</label>
+                <div class="modal-name">
+                    <input class="input-text" type="text" name="user-name" id="user-mail" placeholder="" />
+                    <label for="user-mail" class="label-icon">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/Icon/icons.svg#icon-modal-email"></use>
+                        </svg>
+                    </label>
+                </div>
+                <div class="modal-name">
+                    <label for="notice" class="label-name">Коментар</label>
+                    <textarea class="input-textarea" name="notice" id="notice" placeholder="Введіть текст"></textarea>
+                </div>
+                <div class="modal-policy">
+                    <input class="input-policy" type="checkbox" name="policy" id="policy"/>
+                    <label for="policy" class="label-policy">
+                        Погоджуюся з розсилкою та приймаю
+                        <a class="policy-link" href="./index.html"> Умови договору</a>
+                    </label>
+                </div>
+                <button class="modal-btn" type="submit">
+                    Відправити
+                </button>
+            </form>
         </div>
     </div>
 
